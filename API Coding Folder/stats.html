@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lists</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/style.css">
+  <!-- Diamond CSS --> <link rel="stylesheet" href="https://eastcoastgang.github.io/diamond/src/index.css">
+</head>
+<body>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="stats.html">Pokemon Stats</a>
+    <a href="typing.html">Pokemon Typing</a>
+    <a href="about.html">About</a>
+  </div>
+  <br>
+  <button class="d-btn contained secondary" onclick="myFunction()">Toggle dark mode</button>
+  
+  <center>
+    <select id="names">
+      <option>Select Pokemon</option>
+    </select>
+    <button class="d-btn text primary" onclick="api()">Click Me For Stats</button>
+    <br><br><br>
+    <div id="response"></div>
+  </center> 
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js" integrity="sha512-yocoLferfPbcwpCMr8v/B0AB4SWpJlouBwgE0D3ZHaiP1nuu5djZclFEIj9znuqghaZ3tdCMRrreLoM8km+jIQ==" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ripplet.js@0.3.0/umd/ripplet-declarative.min.js"></script>
+  <!-- Diamond JS --> <script src="https://eastcoastgang.github.io/diamond/js/diamond.js"></script>
+
+  <!-- Contains the data -->
+  <script src="assets/pokemonData.js"></script>
+  <!-- Contains the functions to manage the data -->
+  <script src="assets/script.js"></script>
+</body>
+<br><br>
+<p style = font-family:sans-serif;font-size:89%>Colour Coding: 
+  <br><br> The lower the stat, the lighter the colour (i.e. white bars are the lowest numbers (around 20 range)
+</p>
+</html>

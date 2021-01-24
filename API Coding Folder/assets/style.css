@@ -1,0 +1,159 @@
+:root {
+  --purple: #7f00ff;
+  --pink: #e100ff;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 48px;
+}
+
+#response {
+  margin-right: 80px;
+  overflow-x: hidden;
+  border-right: 1px solid grey;
+  text-align: left;
+}
+#response div {
+  padding: 10px;
+  margin: 10px;
+  color: rgb(0, 255, 255); 
+  mix-blend-mode: difference;
+}
+
+/* Drodown styles */
+
+#names {
+  height:40px;
+  background-color: #88e8a4;
+  border-color:#d65bd8;
+  border-width:4px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('https://www.serebii.net/pokearth/maps/kanto-frlg/50-1f.png');
+
+  /* Full height */
+  height: 200px; 
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallaxbox {
+  background-color: white; 
+  font-family:sans-serif;
+  text-align: center;
+  padding: 24px;
+}
+
+.nicebutton {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  position: relative;
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0.75em 1.75em;
+  border-radius: 50px;
+  display: inline-block;
+  color: #fff;
+  
+  /* Our gradient */
+  background: -webkit-gradient(linear, left top, right top, from(var(--purple)), to(var(--pink)));
+  background: linear-gradient(to right, var(--purple), var(--pink));
+}
+
+.nicebutton::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -10px;
+  left: 5%;
+  height: 110%;
+  width: 90%;
+  opacity: 0.8;
+  border-radius: 50px;
+  
+  /* Declaring our shadow color inherit from the parent (button) */
+  background: inherit;
+  
+  /* Blurring the element for shadow effect */
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
+  -o-filter: blur(6px);
+  -ms-filter: blur(6px);
+  filter: blur(6px);
+  
+  /* Transition for the magic */
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.nicebutton:hover::after {
+  /* Changing blur effect */
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+
+  /* And change the style properties */
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+}
+
+.nicebutton:hover:active::after {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
