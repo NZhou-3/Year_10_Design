@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <!-- Diamond CSS --> <link rel="stylesheet" href="https://eastcoastgang.github.io/diamond/src/index.css">
+</head>
+<body>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="stats.html">Pokemon Stats</a>
+    <a href="typing.html" class = "active">Pokemon Typing</a>
+    <a href="about.html">About</a>
+
+    <p>
+      
+      <br><center>
+        <button onclick="myFunction()">Display/Hide Pokemon Typing Chart</button>
+<br><br>
+        <div id="myDIV">
+          <img style="width: 700px; height:760px" src="https://img.pokemondb.net/images/typechart.png" />
+          </div>
+      </center>  
+ 
+
+  
+    </p>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+ 
+  </script>
+  
+  </div>
+  
+  
