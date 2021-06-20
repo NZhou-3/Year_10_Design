@@ -1,0 +1,51 @@
+body{
+    background-color: #fdb927 
+}
+
+.topnav {
+    overflow: hidden;
+    background-color:#552583;
+  }
+  
+  .topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color:black;
+    color: white;
+  }
+  
+  .topnav a.active {
+    background-color:#7ca3dc;
+    color: white;
+  }
+  
+ p{
+    color:#552583;
+    font-family: Times New Roman;
+ }
+
+ h1{
+    color: #552583;
+    font-family: Times New Roman;
+ }
+ #testScoreCard {
+  display:flex;
+  margin:0 auto;
+  align-items: center;
+  justify-content: center;
+  border:2px solid #552583;
+  width:50%;
+}
+#team1Info {
+  margin-right: 10px;
+}
+#team2Info {
+  margin-left:10px
+}
